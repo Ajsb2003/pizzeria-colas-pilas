@@ -1,0 +1,26 @@
+//Respuestas de las preguntas teoricas 
+
+1)¿Por qué un sistema de delivery usa Queue para los pedidos pero Stack para la bitácora? ¿Qué problema surgiría si invertimos las estructuras?
+
+R: El sistema Queue, es muy util y practico por la logica que maneja, como dice en sus siglas "El que entra primero sale primero" ayuda que el sistema o programa de este ejemplo que es el de la pizzeria tenga un orden al atender los vinieron primero para la pizzeria, es decir darles prioridad a ellos ya que pidieron ellos y despues de terminar con la primera persona, se sigue la siguiente que llego.
+
+En cambio el uso del Stack en la bitacora ayuda a deshacer el ultimo cambio que se hizo que se escribio o se agrego un ejemplo seria: un cliente que no debia estar en las lista de pedidos ya que no lo hizo en primer lugar, y usando la logica del stack en el boton de "deshacer cambio" quita el ultimo cambio que se hizo que en el ejemplo seria del "cliente que se registro hace poco" sin que afecte los demas que estan registrados.
+
+En cambio si se invierte los sistemas Queue y stack a los botones que no esta bien planteados, sucederia: Que los clientes que hicieron pedidos en primer lugar, serian los ultimos en completarse los pedidos ya que el funcionamiento del stack aplica que la primera instruccion es la ultima que saldra, lo cual no funcionaria en este caso de que el primero que pide es el primero que recibe su pedido, y caso aparte con implementar la bitacora con el Queue ya que en el ejemplo anterior plantado del cliente que no se debio registrar, al usar el boton deshacer; en vez de quitar el ultimo cambio que seria del cliente que se registro "que no deberia estar ahi" aplicaria que la primera instruccion que se aplico al sistema de listas, seria "El primer cliente que pidio un pedido que si deberia estar"
+
+2)¿Por qué es obligatorio verificar Count == 0 antes de Dequeue() o Pop()? ¿Qué ocurre en ejecución si se omite?
+
+R: Ya que es importante verificar que este vacio la estructura para evitar y prevenir errores al momento de ejecutarlo.
+
+Si en cambio no verificas esto, al intertar usar las otras funciones "Dequeue() o Pop()" el sistema te arrojara un error de compilacion o en su caso no funcione el programa 
+
+3)En el método Deshacer, ¿por qué es necesario analizar el texto con .StartsWith() antes de revertir? ¿Qué error lógico evitaría esto?
+
+R: Es necesario, ya que permite verificar que el cambio que se esta tratando de hacer, sirve para asegurar que el cambio que vas a hacer "En este caso deshacer o quitar" todavia este o exista, y a su vez el StartsWith() evitar borrar informacion por error.
+
+4)¿Qué ventaja tiene entregar mediante Fork + Pull Request en lugar de un archivo comprimido? ¿Cómo facilita la la retroalimentación?
+
+R: Ya que en primer lugar aparte de tener tu codigo en un entorno ya digital (para evitar situaciones de que lo tengan en un solo equipo y si ese equipo se echa a perder se pueda perder el trabajo), es mas optimo, con orden, y mas facil de compartir y subir las modificaciones que se haga, por ejemplo que estas trabajando con tu equipo de programacion, ya que github tiene funciones que permitan ver que partes modificaron en el codigo, que funciones o comentarios se colocaron tu equipo de trabajo y otras funciones mas practicas.     
+
+ 
+
